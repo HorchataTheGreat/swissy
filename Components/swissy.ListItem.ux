@@ -1,0 +1,27 @@
+<Panel ux:Class="swissy.ListItem" Alignment="VerticalCenter" Margin="20,5"
+       playerName="Name" playerDeckType="Deck Type" playerNumber="0">
+    <string ux:Property="playerNumber" />
+    <string ux:Property="playerName" />
+    <string ux:Property="playerDeckType" />
+
+    <Grid Columns="1*,4*,4*">
+        <Rectangle>
+            <swissy.Subtitle textValue="{Property playerNumber}" Alignment="Left" />
+        </Rectangle>
+
+        <Rectangle>
+            <swissy.Subtitle textValue="{Property playerName}" />
+        </Rectangle>
+
+        <Rectangle>
+            <swissy.Subtitle textValue="{Property playerDeckType}" />
+        </Rectangle>
+    </Grid>
+
+    <Rectangle Width="100%" Height="1" Color="#FFF" Alignment="Bottom"/>
+
+    <WhilePressed>
+        <Scale Factor="0.95" Duration="0.08" />
+    </WhilePressed>
+
+</Panel>

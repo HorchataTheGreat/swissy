@@ -1,0 +1,4 @@
+<Text ux:Class="swissy.Subtitle" Color="#ddd" FontSize="16" Margin="5"
+      Value="{Property textValue}" Alignment="VerticalCenter">
+    <string ux:Property="textValue" />
+</Text>

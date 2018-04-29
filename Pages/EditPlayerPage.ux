@@ -1,0 +1,28 @@
+<Page ux:Class="EditPlayerPage">
+    <Router ux:Dependency="router" />
+
+    <JavaScript File="EditPlayerPage.js" />
+
+    <DockPanel>
+        <swissy.TitleBar Text="Editing {name}" />
+
+        <StackPanel>
+            <Spacer />
+            <Grid Columns="1*,3*">
+                <swissy.Subtitle textValue="Name:" />
+                <TextBox TextColor="White" CaretColor="White" Margin="5" Value="{name}" />
+            </Grid>
+            <Grid Columns="1*,3*">
+                <swissy.Subtitle textValue="Deck:" />
+                <TextBox TextColor="White" CaretColor="White" Margin="5" Value="{deckType}" />
+            </Grid>
+            <Spacer />
+            <Grid Columns="1*,1*">
+                <swissy.Button Text="Cancel" Clicked="{cancel}" changeColor="#111"/>
+                <swissy.Button Text="Save"   Clicked="{save}"/>
+            </Grid>
+        </StackPanel>
+    </DockPanel>
+
+
+</Page>

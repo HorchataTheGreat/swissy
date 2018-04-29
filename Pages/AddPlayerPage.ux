@@ -1,0 +1,28 @@
+<Page ux:Class="AddPlayerPage">
+    <Router ux:Dependency="router" />
+
+    <JavaScript File="AddPlayerPage.js" />
+
+    <DockPanel>
+        <swissy.TitleBar Text="Add Player" />
+
+        <StackPanel>
+            <Spacer />
+            <Grid Columns="1*,3*">
+                <swissy.Subtitle textValue="Name:" />
+                <TextBox TextColor="White" CaretColor="White" Margin="5" Value="{name}" />
+            </Grid>
+            <Grid Columns="1*,3*">
+                <swissy.Subtitle textValue="Deck:" />
+                <TextBox TextColor="White" CaretColor="White" Margin="5" Value="{deckType}" />
+            </Grid>
+            <Spacer />
+            <Grid Columns="1*,1*">
+                <swissy.Button Text="Cancel" Clicked="{cancel}" changeColor="#111"/>
+                <swissy.Button Text="Add"    Clicked="{doInsertPlayer}"/>
+            </Grid>
+        </StackPanel>
+    </DockPanel>
+
+
+</Page>

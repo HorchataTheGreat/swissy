@@ -1,0 +1,24 @@
+<Page ux:Class="ListPlayerPage" >
+    <Router ux:Dependency="router" />
+
+    <JavaScript File="ListPlayerPage.js" />
+
+    <DockPanel>
+        <swissy.TitleBar Text="Tournament Players" />
+        <swissy.ListItem Dock="Top" />
+        <ScrollView>
+            <StackPanel>
+                <Each Items="{players}">
+                    <swissy.ListItem playerNumber="{index()+1}" playerName="{name}"
+                                     playerDeckType="{deckType}" Clicked="{goToPlayer}" />
+                </Each>
+            </StackPanel>
+        </ScrollView>
+
+        <Grid Columns="1*,1*" Dock="Bottom" >
+            <swissy.Button Text="Add"   Clicked="{goToAdd}" />
+            <swissy.Button Text="Start" Clicked="{startTourney}" changeColor="#45b192"/>
+        </Grid>
+    </DockPanel>
+
+</Page>

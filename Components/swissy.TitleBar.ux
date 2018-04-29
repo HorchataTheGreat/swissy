@@ -1,0 +1,7 @@
+<Rectangle ux:Class="swissy.TitleBar" Color="#151515" Dock="Top">
+    <string ux:Property="Text" />
+
+    <Text Value="{Property Text}" Color="#ddd" Alignment="TopCenter" Margin="10"
+          FontSize="24" />
+    <DropShadow Angle="90" Distance="1" Spread="0.2" Size="2" Color="#00000060" />
+</Rectangle>
