@@ -57,4 +57,4 @@ Polyfills.Window:js/EventTarget.js:eventtarget-330fa987.js:js/fetch.js:fetch-cfa
 FuseJS
 Outracks.Simulator.Common.Uno
 Fuse.Preview.Core:fight.png:fight-8c16f395.png
-swissy:Pages/ListPlayerPage.js:listplayerpage-bc8e5abf.js:Pages/EditPlayerPage.js:editplayerpage-b1bf5187.js:Pages/AddPlayerPage.js:addplayerpage-8ded5c06.js:Modules/Backend.js:backend-f7283103.js:Modules/Context.js:context-ef127013.js
+swissy:Pages/AddPlayerPage.js:addplayerpage-8ded5c06.js:Pages/EditPlayerPage.js:editplayerpage-b1bf5187.js:Pages/ListPlayerPage.js:listplayerpage-bc8e5abf.js:Modules/Backend.js:backend-f7283103.js:Modules/Context.js:context-ef127013.js
